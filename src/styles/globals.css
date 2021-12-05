@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: #1E1F1E;
+  --light-gray: #999E99;
+  --white-offset: #F9F9E5;
+  --orange: #F2673D;
+  --royal-blue: #42658A;
+  height: 100%;
+  font-size: 16px;
+  background-color: var(--black);
+  color: var(--white-offset);
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 6vw;
+  padding-left: 6vw;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Work sans', sans-serif;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 48px;
+  padding: 8px 64px 8px 8px;
+  margin-bottom: 8px;
+  background-color: var(--white-offset);
+  background-clip:padding-box;
+
+}
+
+h2 { 
+  font-family: 'Work sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-style: italic;
+  padding: 8px 0px 8px 0px;
+}
+
+/* creating a stacking context for react and next to avoid stacking conflicts */
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: underline;
+  padding: 1px
+}
+a:hover {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0.4px;
+  border-color: var(--orange);
+}
+footer {
+  position:absolute;
+  bottom: 0;
+  padding: 16px 0px 32px 0;
+  color: var(--light-gray);
+}
+
+* {
+  box-sizing: border-box;
+}

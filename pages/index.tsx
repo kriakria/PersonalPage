@@ -6,7 +6,9 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   return (
     <div>
-      This is the <Link href={'/'}>body</Link>
+      <h1>This is a title</h1>
+      <h2>This is a subtitle</h2>
+      This is the <Link href={'/portfolio'}>body</Link>
     </div>
   );
 };

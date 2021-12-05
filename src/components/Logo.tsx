@@ -1,4 +1,4 @@
-import styles from '../styles/Logo.module.css';
+import styles from '../../src/styles/Logo.module.css'
 
 export const Logo = (): JSX.Element => {
   return (
