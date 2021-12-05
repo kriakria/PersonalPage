@@ -5,10 +5,10 @@ export const TopNavigation = () => {
   // todo: Add a function that generates the links based on a scheme provided with items and paths
   return (
     <nav className={styles.navContainer}>
-      <Link href={'/'}>
+      <Link href={'/portfolio'}>
         <a className={styles.navLinks}>Portfolio</a>
       </Link>
-      <Link href={'/'}>
+      <Link href={'/about'}>
         <a className={styles.navLinks}>About</a>
       </Link>
     </nav>
