@@ -5,11 +5,9 @@ status: Draft
 ---
 
 # Chronicle of a career change
-*Moving from a high paying job, into a junior position in tech.*
-(Start here with a description of what has happened until the paint of the job offer from Connected cars.)
+## Moving from a high paying job, into a junior position in tech.
 
-# Part 1: The mindset of a career shift
-## The genesis of the change
+## Part 1: The mindset of a career shift - The genesis of the change
 Change is hard. Changing your career can be one of the hardest decisions you my face during your life. That was the challenge I was dealing with.
  
 For many years I have had this lingering feeling that I would like to become a software developer. This was something I was always doing on the side but never committed in any way.

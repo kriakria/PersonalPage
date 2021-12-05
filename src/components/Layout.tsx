@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 import { TopNavigation } from './TopNavigation';
 import Footer from './Footer'
 
-export const Layout = ({ children }: React.PropsWithChildren<{}>) => {
+const Layout = ({ children }: React.PropsWithChildren<{}>) => {
   return (
     
     <>
@@ -16,3 +16,5 @@ export const Layout = ({ children }: React.PropsWithChildren<{}>) => {
       </>
   );
 };
+
+export default Layout
