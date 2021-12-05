@@ -23,6 +23,7 @@ body {
   --royal-blue: #42658A;
   height: 100%;
   font-size: 16px;
+  letter-spacing: 0.02em;
   background-color: var(--black);
   color: var(--white-offset);
   padding: 0;
@@ -31,8 +32,8 @@ body {
   font-weight: 200;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  padding-right: 6vw;
-  padding-left: 6vw;
+  padding-right: 7vw;
+  padding-left: 7vw;
 }
 
 img, picture, video, canvas, svg {
@@ -86,9 +87,8 @@ a:hover {
   border-color: var(--orange);
 }
 footer {
-  position:absolute;
   bottom: 0;
-  padding: 16px 0px 32px 0;
+  padding: 64px 0px 32px 0;
   color: var(--light-gray);
 }
 
