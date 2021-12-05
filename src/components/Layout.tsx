@@ -5,6 +5,7 @@ import Footer from './Footer'
 
 export const Layout = ({ children }: React.PropsWithChildren<{}>) => {
   return (
+    
     <>
       <header>
         <Logo />

@@ -1,16 +1,27 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link';
+import { getSortedPostsData } from '../src/lib/posts';
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      <h1>This is a title</h1>
-      <h2>This is a subtitle</h2>
-      This is the <Link href={'/portfolio'}>body</Link>
-    </div>
-  );
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+const Home: NextPage = ({ allPostsData }) => {
+  console.log(allPostsData)
+  return allPostsData.map( (post) => {
+    return (
+      <div key={post.id}>
+        <h1>{post.title}</h1>
+      </div>
+    )
+  })
 };
 
 export default Home;
