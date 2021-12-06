@@ -14,7 +14,6 @@ type AllPostsDataProps = {
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
-
   return {
     props: {
       allPostsData
@@ -25,7 +24,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
 
 const Home: NextPage = ({ allPostsData }: AllPostsDataProps) => {
-  console.log({allPostsData})
   return allPostsData.map( (post) => {
     return (
       <div key={post.id}>

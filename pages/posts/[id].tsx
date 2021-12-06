@@ -27,7 +27,6 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 }
 
 const Post = ({ postData }: PostData) => {
-	console.log(postData)
 	return (
 	<div>
 		<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

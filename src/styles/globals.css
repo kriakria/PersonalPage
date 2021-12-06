@@ -23,7 +23,8 @@ body {
   --royal-blue: #42658A;
   height: 100%;
   font-size: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  word-spacing: 0.2em;
   background-color: var(--black);
   color: var(--white-offset);
   padding: 0;
@@ -62,12 +63,17 @@ h1 {
 
 }
 
-h2 { 
+h2, h3 { 
   font-family: 'Work sans', sans-serif;
+  letter-spacing: normal;
   font-weight: 400;
   font-size: 32px;
   font-style: italic;
   padding: 8px 0px 8px 0px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 /* creating a stacking context for react and next to avoid stacking conflicts */
