@@ -1,10 +1,20 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-
 import { getSortedPostsData } from '../src/lib/posts';
+import { GetStaticProps } from 'next'
 
-export async function getStaticProps() {
+
+type AllPostsDataProps = {
+    allPostsData: {
+      date: string
+      title: string
+      id: string
+    }[]
+}
+
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
+
   return {
     props: {
       allPostsData
@@ -12,8 +22,10 @@ export async function getStaticProps() {
   }
 }
 
-const Home: NextPage = ({ allPostsData }) => {
 
+
+const Home: NextPage = ({ allPostsData }: AllPostsDataProps) => {
+  console.log({allPostsData})
   return allPostsData.map( (post) => {
     return (
       <div key={post.id}>
