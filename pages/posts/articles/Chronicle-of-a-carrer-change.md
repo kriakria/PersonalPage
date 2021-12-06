@@ -2,6 +2,7 @@
 title: Chronicle of a career change
 author: Jorge Lopes Rodrigues
 status: Draft
+date: '2021-12-15'
 ---
 
 # Chronicle of a career change

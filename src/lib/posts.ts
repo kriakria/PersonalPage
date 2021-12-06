@@ -4,10 +4,15 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-
 const postsDirectory = path.join(process.cwd(), 'pages/posts/articles')
 
+type PostsData = {
+	author: string,
+	date: string,
+	status: string,
+	title: string
 
+}
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -26,7 +31,7 @@ export function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
-      ...matterResult.data
+      ...(matterResult.data as PostsData)
     }
   })
   // Sort posts by date
@@ -41,6 +46,7 @@ export function getSortedPostsData() {
   })
 }
 
+
 export function getAllPostIds() {
 	const fileNames = fs.readdirSync(postsDirectory)
 	return fileNames.map(fileName => {
@@ -52,7 +58,7 @@ export function getAllPostIds() {
 	})
   }
 
-  export async function getPostData(id) {
+  export async function getPostData(id: string) {
 	  const fullPath = path.join(postsDirectory, `${id}.md`)
 	  const fileContents = fs.readFileSync(fullPath, 'utf8')
 	  const matterResult = matter(fileContents)
