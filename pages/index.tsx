@@ -1,7 +1,7 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import { getSortedPostsData } from '../src/lib/posts';
 import { GetStaticProps } from 'next'
+import styles from '../src/styles/Home.module.css'
 
 
 type AllPostsDataProps = {
@@ -9,6 +9,7 @@ type AllPostsDataProps = {
       date: string
       title: string
       id: string
+      excerpt: string
     }[]
 }
 
@@ -18,21 +19,29 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       allPostsData
     }
-  }
+  }       
 }
 
 
 
-const Home: NextPage = ({ allPostsData }: AllPostsDataProps) => {
-  return allPostsData.map( (post) => {
-    return (
-      <div key={post.id}>
-        <Link href={`posts/${post.id.toLowerCase()}`} passHref>
-          <h1>{post.title}</h1>
-        </Link>
-      </div>
-    )
-  })
+const Home = ({ allPostsData }: AllPostsDataProps) => {
+  return (
+    <div>
+      {
+        allPostsData.map( (post) => {
+          return (
+            <Link href={`posts/${post.id.toLowerCase()}`} passHref key={post.id}>
+              <div>
+                  <h1>{post.title}</h1>
+                  <p className={styles.excerpt}>{post.excerpt}</p>
+              </div>
+            </Link>
+          )
+        })
+      }
+    </div>
+  )
+  
 };
 
 export default Home;

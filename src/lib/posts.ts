@@ -10,7 +10,8 @@ type PostsData = {
 	author: string,
 	date: string,
 	status: string,
-	title: string
+	title: string,
+  excerpt: string
 
 }
 

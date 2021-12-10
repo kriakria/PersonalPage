@@ -6,7 +6,12 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": false,
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "pretty": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
