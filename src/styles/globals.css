@@ -4,7 +4,9 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -16,13 +18,13 @@
 
 html,
 body {
-  --black: #1E1F1E;
-  --light-gray: #999E99;
-  --white-offset: #F9F9E5;
-  --orange: #F2673D;
-  --royal-blue: #42658A;
-  height: 100%;
-  font-size: 16px;
+  --black: #1e1f1e;
+  --light-gray: #999e99;
+  --white-offset: #f9f9e5;
+  --orange: #f2673d;
+  --royal-blue: #42658a;
+  min-height: 100vh;
+  font-size: 18px;
   letter-spacing: 0.03em;
   word-spacing: 0.2em;
   background-color: var(--black);
@@ -37,16 +39,29 @@ body {
   padding-left: 7vw;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -59,11 +74,11 @@ h1 {
   padding: 8px 64px 8px 8px;
   margin-bottom: 8px;
   background-color: var(--white-offset);
-  background-clip:padding-box;
-
+  background-clip: padding-box;
 }
 
-h2, h3 { 
+h2,
+h3 {
   font-family: 'Work sans', sans-serif;
   letter-spacing: normal;
   font-weight: 400;
@@ -77,11 +92,12 @@ h3 {
 }
 
 p {
-  margin: 1em 0 1em 0
+  margin: 1em 0 1em 0;
 }
 
 /* creating a stacking context for react and next to avoid stacking conflicts */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -102,6 +118,8 @@ footer {
   bottom: 0;
   padding: 64px 0px 32px 0;
   color: var(--light-gray);
+  padding-right: 7vw;
+  padding-left: 7vw;
 }
 
 * {

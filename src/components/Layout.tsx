@@ -1,11 +1,10 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { TopNavigation } from './TopNavigation';
-import Footer from './Footer'
+import Footer from './Footer';
 
 const Layout = ({ children }: React.PropsWithChildren<{}>) => {
   return (
-    
     <>
       <header>
         <Logo />
@@ -13,8 +12,8 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
       </header>
       <body>{children}</body>
       <Footer />
-      </>
+    </>
   );
 };
 
-export default Layout
+export default Layout;
