@@ -1,8 +1,17 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 const About: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>Jorge Writes | About</title>
+        <meta
+          property="og:title"
+          content="Jorge Writes | About page. Who is Jorge. Learn a little about code, coffee and music."
+          key="title"
+        />
+      </Head>
       <h1>About Jorge</h1>
       <h2>This is the subtitle</h2>
       <p>
