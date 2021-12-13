@@ -1,8 +1,11 @@
-import type { NextPage } from 'next';
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { HeaderTags } from '../src/components/HeaderTags'
 
 const About: NextPage = () => {
   return (
     <div>
+      <HeaderTags />
       <h1>About Jorge</h1>
       <h2>This is the subtitle</h2>
       <p>
@@ -18,7 +21,7 @@ const About: NextPage = () => {
         nisi...{' '}
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
