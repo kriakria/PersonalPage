@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import AboutPicture from '../src/components/AboutPicture'
 import { HeaderTags } from '../src/components/HeaderTags'
 
 const About: NextPage = () => {
@@ -7,6 +8,7 @@ const About: NextPage = () => {
     <div>
       <HeaderTags />
       <h1>About Jorge</h1>
+      <AboutPicture />
       <h2>This is the subtitle</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
