@@ -1,0 +1,24 @@
+.about-container {
+  --black: #1e1f1e;
+  --light-gray: #999e99;
+  --white-offset: ;
+  --orange: #f2673d;
+  --royal-blue: #42658a;
+}
+
+.aboutPicture {
+  margin: 0 auto;
+  width: 16em;
+  height: 16em;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.mainTitle {
+  font-family: 'Work Sans', 'Monteserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

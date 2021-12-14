@@ -14,15 +14,15 @@
 */
 * {
   margin: 0;
-}
-
-html,
-body {
   --black: #1e1f1e;
   --light-gray: #999e99;
   --white-offset: #f9f9e5;
   --orange: #f2673d;
   --royal-blue: #42658a;
+}
+
+html,
+body {
   min-height: 100vh;
   font-size: 18px;
   letter-spacing: 0.03em;
