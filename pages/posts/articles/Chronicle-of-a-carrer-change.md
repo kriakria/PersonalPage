@@ -108,3 +108,5 @@ That leaves the door open for them to decide whether this is a compromise worth 
 A few weeks went by and they got in touch with an offer, to which I accepted after some negotiation.
 
 ## Part 2: Becoming the new professional - How to get good at what you want to do next
+
+Draft to come soon
