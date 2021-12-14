@@ -1,10 +1,17 @@
 import styles from '../styles/About.module.css'
-import { HeaderTags } from './HeaderTags'
+import Image from 'next/image'
+import profilePic from '../../public/ProfilePic.webp'
 
 const AboutPicture = () => {
   return (
     <div className={styles.aboutContainer}>
-      <div className={styles.aboutPicture}></div>
+      <div className={styles.aboutPicture}>
+        <Image
+          className={styles.aboutPicture}
+          src={profilePic}
+          layout="responsive"
+        />
+      </div>
     </div>
   )
 }
