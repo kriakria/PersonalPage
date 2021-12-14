@@ -19,7 +19,8 @@ const About: NextPage = () => {
       <p>
         At work I am a mobile engineer working on an app for both iOS and
         Android that is used for dozens of thousands of users in different
-        countries. The app is built using React-Native.
+        countries. The app is built using React-Native and fully written in
+        TypeScript.
       </p>
       <h2>Coffee</h2>
       <p>Coffee absolutely fascinates me! ☕️</p>
@@ -40,9 +41,9 @@ const About: NextPage = () => {
         are rough and my constant companion.
       </p>
       <p>
-        I've been playing the guitar since I was 13 years old and, even though I
-        have not turned into the rockstar I once dreamt of being, I still try to
-        play for a few minutes almost every day.
+        I have been playing the guitar since I was 13 years old and, even though
+        I have not turned into the rockstar I once dreamt of being, I still try
+        to play for a few minutes almost every day.
       </p>
       <p>
         Another part that fascinates me is the technology and the gear behind

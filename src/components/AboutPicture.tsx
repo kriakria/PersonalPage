@@ -10,6 +10,7 @@ const AboutPicture = () => {
           className={styles.aboutPicture}
           src={profilePic}
           layout="responsive"
+          alt="Profile picture"
         />
       </div>
     </div>
