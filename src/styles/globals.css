@@ -71,7 +71,7 @@ h1 {
   color: var(--black);
   font-weight: 700;
   font-size: 48px;
-  padding: 8px 64px 8px 8px;
+  padding: 0.05em 1em 0.05em 0.25em;
   margin-bottom: 16px;
   background-color: var(--white-offset);
   background-clip: padding-box;

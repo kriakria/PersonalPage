@@ -2,6 +2,7 @@
 title: You cannot be creative
 author: Jorge Lopes Rodrigues
 status: done
+date: '2021-12-14'
 excerpt: You cannot be creative. Creativity only exists as a verb. You can do creative instead.
 url-title: you-cannot-be-creative
 ---
