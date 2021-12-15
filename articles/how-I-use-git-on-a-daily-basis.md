@@ -1,7 +1,7 @@
 ---
 title: How I use git on a daily basis
 author: Jorge Lopes Rodrigues
-status: Draft
+status: Done
 date: '2021-12-11'
 excerpt: A simple collection of tips and flows that I use every single day in git and github for work, pleasure and profit.
 url-title: how-use-git-daily
