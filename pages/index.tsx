@@ -25,7 +25,6 @@ const Home = ({ allPostsData }: AllPostsDataProps) => {
   return (
     <div>
       {allPostsData.map((post) => {
-        console.log(post.id)
         return (
           <Link href={`posts/${post.id.toLowerCase()}`} passHref key={post.id}>
             <div>

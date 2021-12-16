@@ -10,7 +10,6 @@ type PostData = {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllPostIds()
-  paths.forEach((path) => console.log({ path }))
   return {
     paths,
     fallback: false,
@@ -18,7 +17,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  console.log({ params })
   const postData = await getPostData(params?.id as string)
   return {
     props: {
