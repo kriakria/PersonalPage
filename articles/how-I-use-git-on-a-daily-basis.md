@@ -14,7 +14,7 @@ You probably know already but Git and GitHub are extremelly powerful tools and a
 These useful commands usually are my go-to ones to get me out of trouble.
 I noted these down to make it easier for me to remember which command to use for what. It helped me a lot and maybe it will help you too.
 
-## Basics
+## Basics - Getting off the ground
 
 Cloning a repo:
 `git clone https://repowurl.com`
