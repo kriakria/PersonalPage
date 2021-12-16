@@ -13,7 +13,8 @@ export async function getAllPostIds() {
   return postData.map((post) => {
     return {
       params: {
-        id: post.id,
+        // TODO Fix typecasting  below
+        id: post.id.toLowerCase() as string,
       },
     }
   })

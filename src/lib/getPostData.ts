@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import { POSTS_DIRECTORY } from './constants'
-
+// TODO type this function properly
 export async function getPostData(filename: string) {
   const fullPath = path.join(POSTS_DIRECTORY, `${filename}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
