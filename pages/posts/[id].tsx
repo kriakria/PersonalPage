@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { getAllPostIds, getPostData } from '../../src/lib/posts'
+import { getAllPostIds } from '../../src/lib/getAllPostIds'
+import { getPostData } from '../../src/lib/getPostData'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { PostsData } from '../../src/lib/posts'
 import { HeaderTags } from '../../src/components/HeaderTags'
@@ -9,7 +9,8 @@ type PostData = {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds()
+  const paths = await getAllPostIds()
+  console.log({ paths })
   return {
     paths,
     fallback: false,

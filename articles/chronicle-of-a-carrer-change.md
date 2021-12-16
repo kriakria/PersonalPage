@@ -4,7 +4,7 @@ author: Jorge Lopes Rodrigues
 status: Draft
 date: '2021-12-15'
 excerpt: 'What did it take for me to move from a highly paid management job in a large coorporation into a Developer job in a small startup? How did  I think about it, how did I prepare myself, how did I approach the job hunt and how did I manage the transition'
-url-title: chronicle-of-a-carrer-change
+url: chronicle-of-a-carrer-change
 ---
 
 # Chronicle of a career change
