@@ -4,7 +4,7 @@ author: Jorge Lopes Rodrigues
 status: Done
 date: '2021-12-11'
 excerpt: A simple collection of tips and flows that I use every single day in git and github for work, pleasure and profit.
-url: how-I-use-git-on-a-daily-basis
+url: how-use-git-on-a-daily-basis
 ---
 
 # The Git cheat-sheet
