@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -14,11 +15,18 @@
 */
 * {
   margin: 0;
-  --black: #1e1f1e;
-  --light-gray: #999e99;
-  --white-offset: #f9f9e5;
-  --orange: #f2673d;
-  --royal-blue: #42658a;
+  --black: hsl(120 2% 12%);
+  --black-1: hsl(120 2% 30%);
+  --black-2: hsl(120 2% 60%);
+  --black-3: hsl(120 2% 80%);
+  --white-offset: hsl(60 62% 94%);
+  --orange: hsl(14 88% 59%);
+  --orange-1: hsl(14 88% 80%);
+  --orange-2: hsl(14 88% 90%);
+  --blue: hsl(211 35% 40%);
+  --blue-1: hsl(211 35% 60%);
+  --blue-2: hsl(211 35% 80%);
+  --blue-3: hsl(211 35% 95%);
 }
 
 html,
@@ -102,6 +110,16 @@ p {
   isolation: isolate;
 }
 
+code {
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 8px;
+  padding: 16px;
+  display: block;
+  background-color: var(--black-1);
+}
+
 a {
   color: var(--orange);
   text-decoration: underline;
@@ -121,7 +139,7 @@ a:hover {
 footer {
   bottom: 0;
   padding: 64px 0px 32px 0;
-  color: var(--light-gray);
+  color: var(--black-1);
   padding-right: 7vw;
   padding-left: 7vw;
 }
