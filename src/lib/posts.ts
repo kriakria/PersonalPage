@@ -6,7 +6,7 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), '/articles')
 
-export type PostsData = {
+export interface PostsDataType {
   author: string
   date: string
   status: string
@@ -16,7 +16,11 @@ export type PostsData = {
   contentHtml: string
 }
 
-export function getSortedPostsData() {
+export interface PostMetaDataFullType extends PostsDataType {
+  id: string
+}
+
+export function getSortedPostsData(): PostMetaDataFullType[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map((fileName) => {
@@ -28,10 +32,9 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents)
     const id = matterResult.data.url
 
-    // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as PostsData),
+      ...(matterResult.data as PostsDataType),
     }
   })
   // Sort posts by date

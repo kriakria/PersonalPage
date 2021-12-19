@@ -3,9 +3,10 @@ import { GetStaticProps } from 'next/types'
 import { PageNotFoundIcon } from '../src/assets/icons/PageNotFoundIcon'
 import { getSortedPostsData } from '../src/lib/posts'
 import styles from '../src/styles/404.module.css'
+import { PostMetaDataFullType } from '../src/lib/posts'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPosts = getSortedPostsData()
+  const allPosts: PostMetaDataFullType[] = getSortedPostsData()
   return {
     props: {
       allPosts,
@@ -13,7 +14,11 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const Custom404 = ({ allPosts }) => {
+type PropTypes = {
+  allPosts: PostMetaDataFullType[]
+}
+
+const Custom404 = ({ allPosts }: PropTypes) => {
   return (
     <div className={styles.notFoundPage}>
       <div>
