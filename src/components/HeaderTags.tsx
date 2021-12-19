@@ -8,7 +8,7 @@ type HeaderTagsProps = {
 }
 
 export const HeaderTags = ({
-  title = 'Code, Coffee and Music key',
+  title = 'Code, Coffee and Music',
   url = '',
   content = '',
 }: HeaderTagsProps) => {
