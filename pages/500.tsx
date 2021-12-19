@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { GetStaticProps } from 'next/types'
-import { PageNotFoundIcon } from '../src/assets/icons/PageNotFoundIcon'
+import { ServerErrorIcon } from '../src/assets/icons/ServerErrorIcon'
 import { getSortedPostsData } from '../src/lib/posts'
 import styles from '../src/styles/404.module.css'
 import { PostMetaDataFullType } from '../src/lib/posts'
@@ -18,17 +18,20 @@ type PropTypes = {
   allPosts: PostMetaDataFullType[]
 }
 
-const Custom404 = ({ allPosts }: PropTypes) => {
+const Custom500 = ({ allPosts }: PropTypes) => {
   return (
     <div className={styles.notFoundPage}>
       <div className={styles.errorIcon}>
-        <PageNotFoundIcon />
+        <ServerErrorIcon />
       </div>
       <div className={styles.header}>Don’t panic...yet.</div>
       <div className={styles.mainText}>
         <div>
-          Story is, the page you tried to access don’t exist.
-          <div>But hey! All the ones below do exist! Enjoy!</div>
+          Wow! Something here went awfuly wrong. Sorry about that. .
+          <div>
+            But hey! Why don’t you try clicking some of the links below. I bet
+            they work just fine. 😇
+          </div>
         </div>
         <div className={styles.linksList}>
           {allPosts.map((post) => (
@@ -43,4 +46,4 @@ const Custom404 = ({ allPosts }: PropTypes) => {
     </div>
   )
 }
-export default Custom404
+export default Custom500
