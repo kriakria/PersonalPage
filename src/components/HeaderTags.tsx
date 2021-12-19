@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import favicon from '../../public/favicon.svg'
 
 type HeaderTagsProps = {
   title?: string
@@ -20,6 +21,7 @@ export const HeaderTags = ({
           content={`Jorge Writes | ${title}`}
           key="page:title"
         />
+        <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" />
         <meta
           name="description"
           key="description"
