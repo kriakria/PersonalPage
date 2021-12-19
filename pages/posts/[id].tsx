@@ -1,11 +1,11 @@
 import { getAllPostIds } from '../../src/lib/getAllPostIds'
 import { getPostData } from '../../src/lib/getPostData'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { PostsData } from '../../src/lib/posts'
+import { PostMetaDataFullType } from '../../src/lib/posts'
 import { HeaderTags } from '../../src/components/HeaderTags'
 
 type PostData = {
-  postData: PostsData
+  postData: PostMetaDataFullType
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
