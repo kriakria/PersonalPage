@@ -1,0 +1,25 @@
+.notFoundPage {
+  margin: 0;
+  --black: #1e1f1e;
+  --light-gray: #999e99;
+  --white-offset: #f9f9e5;
+  --orange: #f2673d;
+  --royal-blue: #42658a;
+}
+
+.header {
+  color: var(--white-offset);
+  display: inline-block;
+  font-family: 'Work sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  background-color: transparent;
+}
+
+.mainText {
+  color: var(--white-offset);
+  display: inline-block;
+  font-family: 'Work sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
